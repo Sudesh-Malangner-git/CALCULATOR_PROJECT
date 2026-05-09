@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | Area Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="calcy.html">Calculator</a>
+        <a class="active" href="area.html">Area</a>
+        <a href="volume.html">Volume</a>
+        <a href="bmi.html">BMI</a>
+        <a href="contactus.html">Contact</a>
+        <a href="info.html">Developer</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subhero">
+        <div>
+          <p class="eyebrow">Area and surface area</p>
+          <h1>Geometry formulas in one organized workspace.</h1>
+          <p>
+            Calculate common 2D areas and 3D surface areas with corrected formulas,
+            consistent input labels, and instant results.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="home.html">Back Home</a>
+            <a class="btn btn-primary" href="volume.html">Next: Volume</a>
+          </div>
+        </div>
+        <div class="subhero-media">
+          <img src="area.jpeg" alt="Area calculator visual">
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="form-grid">
+          <form class="calc-card" data-formula-form="cuboidSurface">
+            <h2>Cuboid Surface Area</h2>
+            <p>Formula: 2(lw + lh + wh)</p>
+            <div class="fields">
+              <div class="field"><label for="cuboid-length">Length</label><input id="cuboid-length" name="length" type="number" step="any" required></div>
+              <div class="field"><label for="cuboid-width">Width</label><input id="cuboid-width" name="width" type="number" step="any" required></div>
+              <div class="field"><label for="cuboid-height">Height</label><input id="cuboid-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="cubeSurface">
+            <h2>Cube Surface Area</h2>
+            <p>Formula: 6a^2</p>
+            <div class="fields single">
+              <div class="field"><label for="cube-edge">Edge</label><input id="cube-edge" name="edge" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="sphereSurface">
+            <h2>Sphere Surface Area</h2>
+            <p>Formula: 4*pi*r^2</p>
+            <div class="fields single">
+              <div class="field"><label for="sphere-radius">Radius</label><input id="sphere-radius" name="radius" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="rectangleArea">
+            <h2>Rectangle Area</h2>
+            <p>Formula: length x width</p>
+            <div class="fields">
+              <div class="field"><label for="rectangle-length">Length</label><input id="rectangle-length" name="length" type="number" step="any" required></div>
+              <div class="field"><label for="rectangle-width">Width</label><input id="rectangle-width" name="width" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="circleArea">
+            <h2>Circle Area</h2>
+            <p>Formula: pi*r^2</p>
+            <div class="fields single">
+              <div class="field"><label for="circle-radius">Radius</label><input id="circle-radius" name="radius" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="cylinderSurface">
+            <h2>Cylinder Surface Area</h2>
+            <p>Formula: 2*pi*r(r + h)</p>
+            <div class="fields">
+              <div class="field"><label for="cylinder-radius">Radius</label><input id="cylinder-radius" name="radius" type="number" step="any" required></div>
+              <div class="field"><label for="cylinder-height">Height</label><input id="cylinder-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="parallelogramArea">
+            <h2>Parallelogram Area</h2>
+            <p>Formula: base x height</p>
+            <div class="fields">
+              <div class="field"><label for="parallel-base">Base</label><input id="parallel-base" name="base" type="number" step="any" required></div>
+              <div class="field"><label for="parallel-height">Height</label><input id="parallel-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="trapezoidArea">
+            <h2>Trapezoid Area</h2>
+            <p>Formula: ((a + b) / 2) x height</p>
+            <div class="fields">
+              <div class="field"><label for="trap-base-a">Base A</label><input id="trap-base-a" name="baseA" type="number" step="any" required></div>
+              <div class="field"><label for="trap-base-b">Base B</label><input id="trap-base-b" name="baseB" type="number" step="any" required></div>
+              <div class="field"><label for="trap-height">Height</label><input id="trap-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="ellipseArea">
+            <h2>Ellipse Area</h2>
+            <p>Formula: pi*a*b</p>
+            <div class="fields">
+              <div class="field"><label for="ellipse-a">Radius A</label><input id="ellipse-a" name="radiusA" type="number" step="any" required></div>
+              <div class="field"><label for="ellipse-b">Radius B</label><input id="ellipse-b" name="radiusB" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 sq. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

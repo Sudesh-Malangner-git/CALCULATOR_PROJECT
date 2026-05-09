@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a class="active" href="calcy.html">Calculator</a>
+        <a href="area.html">Area</a>
+        <a href="volume.html">Volume</a>
+        <a href="bmi.html">BMI</a>
+        <a href="contactus.html">Contact</a>
+        <a href="info.html">Developer</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subhero">
+        <div>
+          <p class="eyebrow">Basic calculator</p>
+          <h1>Fast arithmetic with a focused keypad.</h1>
+          <p>A compact calculator surface for everyday numeric work.</p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="home.html">Back Home</a>
+            <a class="btn btn-primary" href="area.html">Next: Area</a>
+          </div>
+        </div>
+        <div class="subhero-media">
+          <img src="calcy.jpeg" alt="Calculator visual">
+        </div>
+      </section>
+
+      <section class="workspace split-layout">
+        <aside class="panel panel-pad">
+          <h2>Examples</h2>
+          <ul class="quick-list">
+            <li><span class="dot"></span><span><strong>15.5 + 4.2</strong><br>Decimal addition.</span></li>
+            <li><span class="dot"></span><span><strong>(45 - 12) * 2</strong><br>Grouped arithmetic.</span></li>
+            <li><span class="dot"></span><span><strong>144 % 10</strong><br>Remainder calculation.</span></li>
+          </ul>
+        </aside>
+
+        <section class="calculator-device" data-calculator aria-label="Calculator">
+          <div class="calculator-display">
+            <input type="text" data-display aria-label="Calculator display" placeholder="0" inputmode="decimal">
+          </div>
+          <div class="keypad">
+            <button class="key danger" type="button" data-key="clear">AC</button>
+            <button class="key" type="button" data-key="backspace">C</button>
+            <button class="key operator" type="button" data-key="%">%</button>
+            <button class="key operator" type="button" data-key="/">/</button>
+
+            <button class="key" type="button" data-key="7">7</button>
+            <button class="key" type="button" data-key="8">8</button>
+            <button class="key" type="button" data-key="9">9</button>
+            <button class="key operator" type="button" data-key="*">*</button>
+
+            <button class="key" type="button" data-key="4">4</button>
+            <button class="key" type="button" data-key="5">5</button>
+            <button class="key" type="button" data-key="6">6</button>
+            <button class="key operator" type="button" data-key="-">-</button>
+
+            <button class="key" type="button" data-key="1">1</button>
+            <button class="key" type="button" data-key="2">2</button>
+            <button class="key" type="button" data-key="3">3</button>
+            <button class="key operator" type="button" data-key="+">+</button>
+
+            <button class="key" type="button" data-key="0">0</button>
+            <button class="key" type="button" data-key="00">00</button>
+            <button class="key" type="button" data-key=".">.</button>
+            <button class="key equal" type="button" data-key="equals">=</button>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

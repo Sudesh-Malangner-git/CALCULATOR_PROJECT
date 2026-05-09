@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | Registration</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-wrap" style="--auth-image: url('reg_bg.jpg')">
+    <section class="auth-panel">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <h1>Create account</h1>
+      <p>Create your project account.</p>
+
+      <form data-demo-form data-redirect="login1.html" data-success="Registration saved. Opening login page.">
+        <div class="field">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" minlength="4" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+        <a class="btn btn-outline" href="login1.html">Already Registered</a>
+        <p class="status-message" data-status aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

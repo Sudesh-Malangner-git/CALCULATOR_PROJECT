@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | Login</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="auth-page">
+  <main class="auth-wrap" style="--auth-image: url('pic.webp')">
+    <section class="auth-panel">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <h1>Welcome back</h1>
+      <p>Enter your email and password to continue.</p>
+
+      <form data-demo-form data-redirect="home.html" data-success="Login successful. Opening home page.">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" minlength="4" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Login</button>
+        <a class="btn btn-outline" href="reg.html">New Registration</a>
+        <p class="status-message" data-status aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

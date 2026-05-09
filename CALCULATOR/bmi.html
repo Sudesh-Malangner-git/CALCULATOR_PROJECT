@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | BMI Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="calcy.html">Calculator</a>
+        <a href="area.html">Area</a>
+        <a href="volume.html">Volume</a>
+        <a class="active" href="bmi.html">BMI</a>
+        <a href="contactus.html">Contact</a>
+        <a href="info.html">Developer</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subhero">
+        <div>
+          <p class="eyebrow">BMI and converters</p>
+          <h1>Body mass index with simple unit conversion.</h1>
+          <p>
+            Enter height in centimeters and weight in kilograms, then convert pounds
+            or feet when you need metric values.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="volume.html">Back: Volume</a>
+            <a class="btn btn-primary" href="contactus.html">Contact</a>
+          </div>
+        </div>
+        <div class="subhero-media">
+          <img src="bmi.jpeg" alt="BMI calculator visual">
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="form-grid">
+          <form class="calc-card" data-bmi-form>
+            <h2>BMI Calculator</h2>
+            <p>Formula: weight / height^2, where height is measured in meters.</p>
+            <div class="fields">
+              <div class="field"><label for="height">Height in cm</label><input id="height" name="height" type="number" step="any" required></div>
+              <div class="field"><label for="weight">Weight in kg</label><input id="weight" name="weight" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate BMI</button>
+            <div class="result-panel"><span class="result-label">Your BMI</span><span class="result-value" data-result>0</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-convert-form="poundsToKg" data-unit="kg">
+            <h2>Pounds to Kilograms</h2>
+            <p>Use this before calculating BMI if your weight is in pounds.</p>
+            <div class="fields single">
+              <div class="field"><label for="pounds">Weight in pounds</label><input id="pounds" name="value" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Convert</button>
+            <div class="result-panel"><span class="result-label">Kilograms</span><span class="result-value" data-result>0 kg</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-convert-form="feetToCm" data-unit="cm">
+            <h2>Feet to Centimeters</h2>
+            <p>Use this before calculating BMI if your height is in feet.</p>
+            <div class="fields single">
+              <div class="field"><label for="feet">Height in feet</label><input id="feet" name="value" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Convert</button>
+            <div class="result-panel"><span class="result-label">Centimeters</span><span class="result-value" data-result>0 cm</span><span class="result-note" data-result-note></span></div>
+          </form>
+        </div>
+
+        <div class="info-banner">
+          <h2>Note</h2>
+          <p>BMI is a general screening number. It does not replace medical advice or a full health assessment.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

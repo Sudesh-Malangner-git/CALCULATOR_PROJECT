@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCalc Studio | Volume Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">SC</span>
+        <span>SmartCalc Studio</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="home.html">Home</a>
+        <a href="calcy.html">Calculator</a>
+        <a href="area.html">Area</a>
+        <a class="active" href="volume.html">Volume</a>
+        <a href="bmi.html">BMI</a>
+        <a href="contactus.html">Contact</a>
+        <a href="info.html">Developer</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="subhero">
+        <div>
+          <p class="eyebrow">Volume formulas</p>
+          <h1>Reliable 3D shape calculations.</h1>
+          <p>
+            This page fixes the broken cuboid length ID from the old project and adds
+            more useful volume formulas with the same clean result pattern.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-outline" href="area.html">Back: Area</a>
+            <a class="btn btn-primary" href="bmi.html">Next: BMI</a>
+          </div>
+        </div>
+        <div class="subhero-media">
+          <img src="volume.jpeg" alt="Volume calculator visual">
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="form-grid">
+          <form class="calc-card" data-formula-form="cubeVolume">
+            <h2>Cube Volume</h2>
+            <p>Formula: side^3</p>
+            <div class="fields single">
+              <div class="field"><label for="cube-side">Side</label><input id="cube-side" name="side" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 cu. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="cuboidVolume">
+            <h2>Cuboid Volume</h2>
+            <p>Formula: length x width x height</p>
+            <div class="fields">
+              <div class="field"><label for="cuboid-length">Length</label><input id="cuboid-length" name="length" type="number" step="any" required></div>
+              <div class="field"><label for="cuboid-width">Width</label><input id="cuboid-width" name="width" type="number" step="any" required></div>
+              <div class="field"><label for="cuboid-height">Height</label><input id="cuboid-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 cu. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="cylinderVolume">
+            <h2>Cylinder Volume</h2>
+            <p>Formula: pi*r^2*h</p>
+            <div class="fields">
+              <div class="field"><label for="cyl-radius">Radius</label><input id="cyl-radius" name="radius" type="number" step="any" required></div>
+              <div class="field"><label for="cyl-height">Height</label><input id="cyl-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 cu. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="sphereVolume">
+            <h2>Sphere Volume</h2>
+            <p>Formula: 4/3*pi*r^3</p>
+            <div class="fields single">
+              <div class="field"><label for="sphere-radius">Radius</label><input id="sphere-radius" name="radius" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 cu. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+
+          <form class="calc-card" data-formula-form="coneVolume">
+            <h2>Cone Volume</h2>
+            <p>Formula: pi*r^2*h / 3</p>
+            <div class="fields">
+              <div class="field"><label for="cone-radius">Radius</label><input id="cone-radius" name="radius" type="number" step="any" required></div>
+              <div class="field"><label for="cone-height">Height</label><input id="cone-height" name="height" type="number" step="any" required></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Calculate</button>
+            <div class="result-panel"><span class="result-label">Answer</span><span class="result-value" data-result>0 cu. units</span><span class="result-note" data-result-note></span></div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
