@@ -325,8 +325,4 @@ Open:
 http://localhost:8000
 ```
 
----
 
-# Summary
-
-SmartCalc Studio is a lightweight and practical web-based calculator suite that demonstrates responsive UI design, JavaScript-based mathematical logic, and basic PHP integration. The project is well suited for students, beginners, and developers looking to explore utility-based web application development.
